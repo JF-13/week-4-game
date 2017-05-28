@@ -54,14 +54,14 @@ function numberComparison (want, rand, have) {
 		$('#have').html("Have: " + game.have);
 		console.log("im here!");
 	} else if (game.want === game.have) {
-		$('#bottomMsg').html("You got it, keep going!").addClass("bottomMsg");
+		$('#bottomMsg').html("You got it, keep going!");
 		game.wins = game.wins + 1;
 		$("#wins").html("Wins: " + game.wins);
 		game.have = 0;
 		$("#have").html("Have: " + game.have);
 		console.log("im here 2");
 	} else if (game.want < game.have) {
-		$('#bottomMsg').html("You got: " + rand + " and Busted!").addClass("bottomMsg");
+		$('#bottomMsg').html("You got: " + rand + " and Busted!");
 		game.losses = game.losses + 1;
 		$("#losses").html("Losses: " + game.losses);
 		game.have = 0;
