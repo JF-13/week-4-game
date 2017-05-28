@@ -1,13 +1,92 @@
-19-120 for target num
+<!-- 19-120 for target num
 1-12 for each of four crystals
-
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>CrazyCrystals</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<link href="style.css" rel="stylesheet">
+
+
 </head>
 <body>
-	
+	<div class="container">
+		<div id='headBack' class="row headBack">
+			<div class="col-xs-12 col-sm-1 col-m-2"></div>
+			<div id='header' class="col-xs-12 col-sm-10 col-m-8 header">Crystal Collector</div>
+			<div class="col-xs-12 col-sm-1 col-m-2"></div>
+		</div>
+
+		<div class="row midCont">
+
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+				<div class="col-xs-12 col-sm-10 col-m-6">
+					<p>There are four colored cards below. By clicking on any you will add a random ammount of points to your have count</p>
+					<p>You win the game by matching your want count to your have count, you lose a point if your total score goes above the want count.</p>
+					<p>The value of each card is hidden from you until you click on it, some cards may be more volatile than others.</p>
+					<p>Each time you pick a card, the game will change the values of each card</p>
+				</div>
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+		</div>
+		<div class="row midCont bottomPadding">
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+			<div class="col-xs-12 col-sm-5 col-m-3">
+				<p id="hit" class="key">Want: 21</p>
+			</div>
+				<div class="col-xs-12 col-sm-5 col-m-3">
+					<p id="wins" class="wins">Wins: 0</p>
+					<p id="losses" class="losses">Losses: 0</p>
+				</div>
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+		</div>
+		<div class="row midCont bottomPadding">
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+			<div class="col-xs-12 col-sm-5 col-m-3">
+				<p id="have" class="key">Have: 0</p>
+			</div>
+				<div class="col-xs-12 col-sm-5 col-m-3">
+					<div class="row">
+						<div class="col-xs-3">
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<div id="b1" class="col-xs-10 card1 btn btn-primary"></div>
+								<div class="col-xs-1"></div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+						<div class="row">
+								<div class="col-xs-1"></div>
+								<div id="b2" class="col-xs-10 card2 btn btn-success"></div>
+								<div class="col-xs-1"></div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+						<div class="row">
+								<div class="col-xs-1"></div>
+								<div id="b3" class="col-xs-10 card3 btn btn-warning"></div>
+								<div class="col-xs-1"></div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<div id="b4" class="col-xs-10 card4 btn btn-danger"></div>
+								<div class="col-xs-1"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col-xs-0 col-sm-1 col-m-3"></div>
+		</div>
+		<div class="row">
+			<div id="bottomMsg" class="col-xs-12 bottomRow"></div>
+		</div>
+	</div>
+	<script src="logic.js"></script>
 </body>
 </html>

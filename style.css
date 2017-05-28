@@ -1,0 +1,117 @@
+.headBack {
+	background-color: #ccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-bottom: 5px;
+}
+
+.header {
+	font-family: 'Syncopate', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
+
+.pBack {
+	background-color: #ccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 235px;
+	margin-bottom: 	5px;
+	color: white;
+	font-family: 'Syncopate', sans-serif;
+}
+
+.middleBack {
+	background-color: #ccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 5px;
+}
+
+.midCont {
+	background-color: #ccc;
+	color: white;
+	font-family: 'Syncopate', sans-serif;
+	margin-bottom: 5px;
+	padding-top: 10px;
+}
+
+.key {
+	color: grey;
+	font-size: 42px;
+}
+
+.wins {
+	color: grey;
+}
+
+.losses {
+	color: grey;
+}
+
+
+.card1 {
+
+	height: 55px;
+	border-radius: 3px;	
+}
+
+.card2 {
+
+	height: 55px;
+	border-radius: 3px;		
+}
+
+.card3 {
+
+	height: 55px;
+	border-radius: 3px;		
+}
+
+.card4 {
+
+	height: 55px;
+	border-radius: 3px;	
+}
+
+.bottomRow {
+	background-color: #ccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	margin-bottom: 5px;
+
+	font-family: 'Syncopate', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+.pBack {
+	height: 313px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.pBack {
+	height: 313px;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+.pBack {
+	height: 313px;
+
+}
+}
