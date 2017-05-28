@@ -29,7 +29,7 @@ $( "#b3" ).click(function() {
 });
 //button four
 $( "#b4" ).click(function() {
-	game.card4 = randNum(3);
+	game.card4 = randNum(5);
 	numberComparison(game.want, game.card4, game.have);
 });
 
